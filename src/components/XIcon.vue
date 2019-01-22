@@ -1,6 +1,9 @@
 <template>
   <div class="hello" viewBox="0 0 50 50">
-    <component :style="{width: size+'px', height:size+'px', fill: color}" :is="icon"/>
+    <component
+      :style="{width: size+'px', height:size+'px', fill: color}"
+      :is="iconPath(icon)"
+    />
     <!-- hello <Bug class="logo" :style="{width: size, height: size}"/> -->
   </div>
 </template>
@@ -13,6 +16,12 @@ export default {
   props: ['icon', 'size', 'color'],
   components: {
     Bug,
+  },
+  methods: {
+    iconPath(icon) {
+      console.log("file name", icon)
+      return require(`../assets/svg/${icon}.svg`).default;
+    },
   },
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-     <XIcon icon="Bug" size="30" color="darkOrchid" />
+     <XIcon icon="bug" size="30" color="darkOrchid" />
   </div>
 </template>
 
