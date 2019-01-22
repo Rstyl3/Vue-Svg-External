@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+     <XIcon icon="Bug" size="30" color="darkOrchid" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import XIcon from './components/XIcon.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    XIcon
   }
 }
 </script>
