@@ -1,5 +1,5 @@
 # svg-icons3
-Using svg and importing external svg files. Using vue-svg-loader dependency and special config  
+Using svg and importing external svg files. Using [vue-svg-loader](https://vue-svg-loader.js.org) dependency and special config  
 more options here: https://github.com/svg/svgo   
 ### Basic config:   
 <code>vue.config.js</code>
